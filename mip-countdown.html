@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="applicable-device" content="mobile">
+    <title>倒计时</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="keywords" content="高考">
+    <meta name="description" content="高考">
+    <link rel="canonical" href="https://momofan.github.io/mippage/mipLivingCode/source.html">
+    <link rel="stylesheet" type="text/css" href="https://mipcache.bdstatic.com/static/v1/mip.css">
+    <style>
+    h1 {
+        text-align: center;
+    }
+
+    h1,
+    h2 {
+        margin: 10px 0;
+    }
+
+    .mip-countdown-not-start,
+    .mip-countdown-end,
+    .mip-countdown-running {
+        display: none;
+    }
+    </style>
+    <script async src="https://mipcache.bdstatic.com/static/v1/mip.js"></script>
+    <script async src="./mip-countdown-out.js"></script>
+</head>
+
+<body>
+    <h1>欢迎来到英雄的世界</h1>
+    <mip-img layout="responsive" width="980" height="326" src="http://pic1.win4000.com/cover/20160919/20160919105601_92426.png"></mip-img>
+    <h2><center>距离英雄出现还有</center></h2>
+    <mip-countdown layout="responsive" width="300" height="130" endTime="1499247000" startTime="" duration="3600">
+        <div class="mip-countdown-not-start">not start content</div>
+        <div class="mip-countdown-running">
+            <div id="mip-countdown-tiles">
+            </div>
+            <div class="labels">
+                <li>Days</li>
+                <li>Hours</li>
+                <li>Mins</li>
+                <li>Secs</li>
+            </div>
+        </div>
+    </mip-countdown>
+    <mip-img layout="responsive" width="1920" height="1080" src="http://pic1.win4000.com/wallpaper/7/59548ace980a0.jpg"></mip-img>
+</body>
+
+</html>
